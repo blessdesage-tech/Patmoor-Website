@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View Patmoor Fashions gallery showcasing custom designs, production work and training activities."
+    />
+    <title>Gallery | Patmoor Fashions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("patmoor-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" type="image/png" href="patmoor_fashions_logo1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Patmoor Fashions home">
+          <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="academy.html">Academy</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+          <a class="btn btn-primary nav-cta" href="academy.html#admissions">Apply / Enquire</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero gallery-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container hero-content">
+          <span class="eyebrow">Creative showcase</span>
+          <h1>Ideas Made Wearable.</h1>
+          <p>
+            A showcase of fashion creativity, craftsmanship and the work behind every stitch.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-soft gallery-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">From the studio</p>
+            <h2>See the craft in motion.</h2>
+          </div>
+          <div class="media-carousel gallery-carousel" data-carousel aria-label="Patmoor Fashions photos and videos">
+            <div class="carousel-viewport">
+              <figure class="carousel-slide">
+                <img src="image 1.jpeg" alt="Students preparing colourful fabrics in the sewing workshop" />
+                <figcaption>Preparing fabrics for the next creation.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="image 2.png" alt="Instructor showing a group of students a piece of patterned fabric" />
+                <figcaption>Learning to choose and work with fabric.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <video src="video 1.mp4" poster="image 3.png" autoplay muted loop playsinline controls preload="metadata" aria-label="Video from a Patmoor Fashions training session"></video>
+                <figcaption>Training and creative work at Patmoor Fashions.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="image 3.0.png" alt="Fashion students working together around a table" />
+                <figcaption>Building skills through shared practice.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <video src="video 2.mp4" poster="image 4.jpeg" autoplay muted loop playsinline controls preload="metadata" aria-label="Video showing fashion work in the Patmoor Fashions studio"></video>
+                <figcaption>A closer look at work in the studio.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="imaage 5.jpeg" alt="Student sewing fabric at a machine in the workshop" />
+                <figcaption>Practice at the sewing machine.</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous studio feature">‹</button>
+              <div class="carousel-dots" data-carousel-dots aria-label="Choose a studio feature"></div>
+              <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next studio feature">›</button>
+            </div>
+          </div>
+
+          <div class="gallery-controls" aria-label="Gallery filters">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="craft" type="button">Craft &amp; Production</button>
+            <button class="filter-btn" data-filter="training" type="button">Training &amp; Student Activities</button>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item" data-category="craft">
+              <img src="image 1.jpeg" alt="Students preparing colourful fabrics in the sewing workshop" data-lightbox />
+            </figure>
+            <figure class="gallery-item" data-category="craft">
+              <img src="image 4.jpeg" alt="Students cutting patterned fabric during a tailoring lesson" data-lightbox />
+            </figure>
+            <figure class="gallery-item" data-category="training">
+              <img src="image 2.png" alt="Instructor guiding students as they examine fabric" data-lightbox />
+            </figure>
+            <figure class="gallery-item" data-category="craft">
+              <img src="imaage 5.jpeg" alt="Student sewing fabric at a workshop sewing machine" data-lightbox />
+            </figure>
+            <figure class="gallery-item" data-category="training">
+              <img src="image 3.png" alt="Students and instructor reviewing fabric together" data-lightbox />
+            </figure>
+            <figure class="gallery-item" data-category="training">
+              <img src="image 3.0.png" alt="Fashion students gathered around a worktable during a lesson" data-lightbox />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-strip">
+        <div class="container cta-box">
+          <div>
+            <p class="section-tag light">Bring your vision to life</p>
+            <h2>Discuss a custom fashion project or training enquiry.</h2>
+          </div>
+          <a class="btn btn-light" href="contact.html">Start the conversation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+          </a>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Dressmaking</a></li>
+            <li><a href="index.html#services">Cadet uniforms</a></li>
+            <li><a href="index.html#services">Custom fabrics</a></li>
+            <li><a href="index.html#services">NVTI consultancy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+233242536902">024 253 6902</a></li>
+            <li><a href="https://wa.me/233242536902" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:info@patmoorfashions.com">info@patmoorfashions.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Patmoor Fashions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img class="lightbox-image" src="" alt="Expanded gallery view" />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

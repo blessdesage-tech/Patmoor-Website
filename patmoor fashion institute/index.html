@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Patmoor Fashions is a modern fashion house and training academy offering dressmaking, custom fabric design and practical fashion education in Ghana."
+    />
+    <title>Patmoor Fashions | Fashion House & Training Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("patmoor-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" type="image/png" href="patmoor_fashions_logo1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Patmoor Fashions home">
+          <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="academy.html">Academy</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+          <a class="btn btn-primary nav-cta" href="academy.html#admissions">Apply / Enquire</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <span class="eyebrow">Fashion House &amp; Training Academy</span>
+          <h1>Where Creativity Meets Craftsmanship.</h1>
+          <p>
+            We design, create and train with purpose—bringing elegant and practical fashion solutions to individuals, businesses and future
+            creatives across Ghana.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Explore Our Services</a>
+            <a class="btn btn-secondary" href="academy.html">Discover the Academy</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>Custom</strong> Tailoring &amp; design</li>
+            <li><strong>Training</strong> Fashion apprenticeships</li>
+            <li><strong>Support</strong> Practical mentorship</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section about-section">
+        <div class="container two-column">
+          <div class="about-photo">
+            <img
+              src="image 1.jpeg"
+              alt="Students working with colourful fabric in the Patmoor Fashions workshop"
+            />
+          </div>
+
+          <div>
+            <p class="section-tag">About Patmoor Fashions</p>
+            <h2>Fashion rooted in creativity, quality and purpose.</h2>
+            <p>
+              Patmoor Fashions is a fashion business and training academy dedicated to producing beautifully crafted garments and nurturing
+              future fashion professionals through practical learning and guided experience.
+            </p>
+            <p>
+              Our mission is to help clients look their best through custom design and tailored production while giving aspiring creatives the
+              practical skill set needed to thrive in the fashion industry.
+            </p>
+
+            <div class="about-points">
+              <div class="point">
+                <strong>Our mission</strong>
+                <p>To deliver quality workmanship and creative excellence.</p>
+              </div>
+              <div class="point">
+                <strong>Our vision</strong>
+                <p>To be a trusted destination for fashion and skill development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft ceo-section" id="ceo">
+        <div class="container two-column">
+          <div class="ceo-photo">
+            <img
+              src="CEO 1.jpeg"
+              alt="Ms. Patience Aggor, Chief Executive Officer of Patmoor Fashions"
+            />
+          </div>
+
+          <div class="ceo-content">
+            <p class="section-tag">Meet our CEO</p>
+            <h2>Ms. Patience Aggor</h2>
+            <p class="ceo-role">Chief Executive Officer &amp; Fashion Professional</p>
+            <p>
+              Ms. Patience Aggor is a highly professional fashion leader with over seven years of hands-on
+              experience in the fashion and dressmaking industry. Her dedication to excellence, creativity
+              and quality workmanship continues to shape Patmoor Fashions into a trusted fashion house.
+            </p>
+            <p>
+              Beyond her outstanding leadership, Ms. Aggor is passionate about training and mentoring aspiring
+              fashion professionals. Through practical, thoughtful and encouraging instruction, she has helped
+              multitudes of students develop the skills and confidence needed to become accomplished professionals
+              in their own right.
+            </p>
+            <p>
+              Her commitment to professionalism, personal growth and the preservation of quality craftsmanship
+              remains at the heart of everything she teaches and every service she provides.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="services">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="section-tag">Our services</p>
+            <h2>Tailored fashion solutions for every style need.</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="icon-box">✂️</div>
+              <h3>Dressmaking</h3>
+              <p>Custom garments designed to fit beautifully, reflect personal style and meet individual preferences.</p>
+              <a href="contact.html" class="meta-link">Enquire now</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">🧥</div>
+              <h3>Cadet Uniform Making</h3>
+              <p>Professional uniform production with attention to quality, consistency and practicality.</p>
+              <a href="contact.html" class="meta-link">Enquire now</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">🎨</div>
+              <h3>Custom Fabric Design &amp; Printing</h3>
+              <p>Unique textile concepts and print solutions designed for fashion, events and branded visual identity.</p>
+              <a href="contact.html" class="meta-link">Enquire now</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">📘</div>
+              <h3>NVTI Examination Consultancy</h3>
+              <p>Supportive guidance for fashion-related learning and examination preparation.</p>
+              <a href="contact.html" class="meta-link">Enquire now</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">🧵</div>
+              <h3>General Supplies</h3>
+              <p>Essential fashion and workshop supplies to support production, creativity and practical learning.</p>
+              <a href="contact.html" class="meta-link">Enquire now</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">🏫</div>
+              <h3>Apprentice Training</h3>
+              <p>Hands-on learning pathways that help students gain real experience in the fashion business.</p>
+              <a href="academy.html" class="meta-link">Discover academy</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section academy-promo">
+        <div class="container promo-grid">
+          <div class="promo-image">
+            <img
+              src="image 2.png"
+              alt="A fashion instructor guiding students as they examine fabric"
+            />
+          </div>
+
+          <div>
+            <p class="section-tag">Academy</p>
+            <h2>Train your talent. Build your future.</h2>
+            <p>
+              Patmoor Fashions Academy helps aspiring designers and dressmakers gain confidence in their craft through practical fashion education,
+              workshop learning and mentorship that reflects real industry expectations.
+            </p>
+            <ul>
+              <li>Fashion and dressmaking skill development</li>
+              <li>Apprenticeship and practical training opportunities</li>
+              <li>Career guidance and creative growth</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="academy.html">Explore Academy</a>
+              <a class="btn btn-primary" href="academy.html#admissions">Apply for Admission</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="section-tag">Why choose us</p>
+            <h2>Quality, style and customer care at every step.</h2>
+          </div>
+
+          <div class="reason-grid">
+            <article class="reason-card">
+              <div class="reason-icon">✅</div>
+              <h3>Quality Workmanship</h3>
+              <p>Crafted with precision, detail and pride.</p>
+            </article>
+
+            <article class="reason-card">
+              <div class="reason-icon">✨</div>
+              <h3>Stylish Designs</h3>
+              <p>Modern silhouettes and elegant fashion choices.</p>
+            </article>
+
+            <article class="reason-card">
+              <div class="reason-icon">🎯</div>
+              <h3>Attention to Detail</h3>
+              <p>Thoughtful finishing that makes each piece special.</p>
+            </article>
+
+            <article class="reason-card">
+              <div class="reason-icon">🤝</div>
+              <h3>Customer Satisfaction</h3>
+              <p>Friendly service built around your goals and needs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft studio-showcase">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Inside the studio</p>
+            <h2>Learning by making, together.</h2>
+          </div>
+          <div class="media-carousel" data-carousel aria-label="Patmoor Fashions studio photos">
+            <div class="carousel-viewport">
+              <figure class="carousel-slide">
+                <img src="image 3.png" alt="Students and instructor reviewing fabric together in the workshop" />
+                <figcaption>Sharing ideas and learning to work with fabric.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="image 3.0.png" alt="Fashion students gathered around a worktable during a lesson" />
+                <figcaption>Practical lessons around the worktable.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="image 4.jpeg" alt="Students cutting patterned fabric during a tailoring lesson" />
+                <figcaption>Building confidence through hands-on practice.</figcaption>
+              </figure>
+              <figure class="carousel-slide" hidden>
+                <img src="imaage 5.jpeg" alt="Student sewing a garment at a workshop sewing machine" />
+                <figcaption>Developing garment-making skills at the machine.</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous studio photo">‹</button>
+              <div class="carousel-dots" data-carousel-dots aria-label="Choose a studio photo"></div>
+              <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next studio photo">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-strip">
+        <div class="container cta-box">
+          <div>
+            <p class="section-tag light">Let’s create something beautiful</p>
+            <h2>Need a fashion service, uniform order or academy enquiry?</h2>
+          </div>
+          <a class="btn btn-light" href="contact.html">Contact Patmoor</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+          </a>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Dressmaking</a></li>
+            <li><a href="#services">Cadet uniforms</a></li>
+            <li><a href="#services">Custom fabric design</a></li>
+            <li><a href="#services">NVTI consultancy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+233242536902">024 253 6902</a></li>
+            <li><a href="https://wa.me/233242536902" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:info@patmoorfashions.com">info@patmoorfashions.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Patmoor Fashions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

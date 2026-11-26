@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Patmoor Fashions Academy offers practical fashion training, dressmaking skills, apprenticeship opportunities and NVTI guidance."
+    />
+    <title>Academy | Patmoor Fashions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("patmoor-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" type="image/png" href="patmoor_fashions_logo1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Patmoor Fashions home">
+          <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="academy.html" class="active">Academy</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+          <a class="btn btn-primary nav-cta" href="#admissions">Apply / Enquire</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero academy-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container hero-content">
+          <span class="eyebrow">Learn the craft</span>
+          <h1>Learn the Craft. Shape Your Future.</h1>
+          <p>
+            Patmoor Fashions Academy is built for aspiring designers, dressmakers and creative professionals ready to transform
+            talent into real skill through hands-on training and practical industry exposure.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#admissions">Apply for Admission</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-block">
+        <div class="container two-column">
+          <div>
+            <p class="section-tag">Why the academy exists</p>
+            <h2>Practical learning for creative careers.</h2>
+          </div>
+          <div>
+            <p>
+              The academy exists to create opportunity for young people and professionals who want to build practical skills in fashion,
+              garment construction and design. We believe in learning by doing—through guided sessions, workshop practice and exposure to
+              real production standards.
+            </p>
+            <p>
+              Our training approach combines creativity with discipline, helping learners develop confidence, technical competence and a strong
+              eye for detail in every garment they make.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="section-tag">Training pathways</p>
+            <h2>Programmes designed for real-world fashion skills.</h2>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="info-card">
+              <div class="icon-wrap">✂️</div>
+              <h3>Fashion & Dressmaking Skills</h3>
+              <p>
+                Build a strong foundation in garment construction, pattern understanding, fitting, finishing and personal style development.
+              </p>
+              <ul>
+                <li>Garment making fundamentals</li>
+                <li>Pattern adaptation</li>
+                <li>Professional finishing</li>
+              </ul>
+              <a href="#admissions" class="text-link">Enquire now</a>
+            </article>
+
+            <article class="info-card">
+              <div class="icon-wrap">🧵</div>
+              <h3>Apprentice Training</h3>
+              <p>
+                For learners who want practical experience in a fashion production environment, building skill with supervision and mentorship.
+              </p>
+              <ul>
+                <li>Hands-on workshop training</li>
+                <li>Industry exposure</li>
+                <li>Skill refinement</li>
+              </ul>
+              <a href="#admissions" class="text-link">Enquire now</a>
+            </article>
+
+            <article class="info-card">
+              <div class="icon-wrap">📘</div>
+              <h3>NVTI Examination Consultancy</h3>
+              <p>
+                Guidance and preparation support for learners navigating practical and examination expectations in fashion-related studies.
+              </p>
+              <ul>
+                <li>Study guidance</li>
+                <li>Practical readiness</li>
+                <li>Exam support</li>
+              </ul>
+              <a href="#admissions" class="text-link">Enquire now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Admissions</p>
+            <h2>Take the next step into fashion training.</h2>
+          </div>
+
+          <div class="admission-layout" id="admissions">
+            <div class="admission-copy">
+              <p>
+                Prospective learners can enquire about training opportunities, available programmes and practical arrangements. If you are
+                interested in expanding your skills in fashion and dressmaking, we invite you to contact us directly.
+              </p>
+              <div class="check-list">
+                <div>
+                  <strong>What to prepare</strong>
+                  <p>Basic contact details and your area of interest.</p>
+                </div>
+                <div>
+                  <strong>How we respond</strong>
+                  <p>We will guide you on admission arrangements, training details and next steps.</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="enquiry-form" data-whatsapp-form data-whatsapp-number="233242536902" data-title="Academy Admission Enquiry">
+              <div class="field-row two-col">
+                <label>
+                  <span>Applicant's name</span>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Phone number</span>
+                  <input type="tel" name="phone" placeholder="024 000 0000" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Area of interest</span>
+                <select name="interest">
+                  <option>Fashion & Dressmaking Skills</option>
+                  <option>Apprentice Training</option>
+                  <option>NVTI Examination Consultancy</option>
+                  <option>General Enquiry</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Additional message</span>
+                <textarea name="message" rows="5" placeholder="Tell us about your interest, goals or questions..."></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Send enquiry on WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft hostel-section">
+        <div class="container hostel-grid">
+          <div class="hostel-image">
+            <img
+              src="hostel room 1.jpg"
+              alt="Bunk beds in the student hostel"
+            />
+          </div>
+          <div class="hostel-content">
+            <p class="section-tag">Hostel facility</p>
+            <h2>Comfortable accommodation support for learners.</h2>
+            <p>
+              A hostel facility may be available for eligible students and trainees. We encourage interested applicants to enquire about
+              current accommodation arrangements and suitability before making travel plans.
+            </p>
+            <ul>
+              <li>Accommodation support for suitable learners</li>
+              <li>Practical guidance on arrangements</li>
+              <li>Enquiries reviewed on an individual basis</li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Ask about hostel arrangements</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-strip">
+        <div class="container cta-box">
+          <div>
+            <p class="section-tag light">Ready to begin?</p>
+            <h2>Start your fashion journey with Patmoor Fashions.</h2>
+          </div>
+          <a class="btn btn-light" href="contact.html">Contact the academy</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo" src="patmoor_fashions_logo1.png" alt="Patmoor Fashions — We Beautify Your Styles." />
+          </a>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Dressmaking</a></li>
+            <li><a href="index.html#services">Cadet uniforms</a></li>
+            <li><a href="index.html#services">Custom fabrics</a></li>
+            <li><a href="index.html#services">NVTI consultancy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+233242536902">024 253 6902</a></li>
+            <li><a href="https://wa.me/233242536902" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:info@patmoorfashions.com">info@patmoorfashions.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Patmoor Fashions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
